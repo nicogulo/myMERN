@@ -16,7 +16,7 @@ function ShowMostPicked(){
   return (
     <section className="container pt-4">
       <div className="row align-items-center">
-        <div class="col-auto pr-5" style={{ width: 422 }}>
+        <div class="col-auto pr-5" style={{ width: 423 }}>
           <h1 class="h2 font-weight-bold line-height-1 mb-3">
             Forget Busy work, <br/>
             Start Next Vacation
