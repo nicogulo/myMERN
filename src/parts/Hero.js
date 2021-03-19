@@ -10,7 +10,10 @@ import Button from 'elements/Button';
 
 export default function Hero(props) {
 function ShowMostPicked(){
-  window.scrollTo()
+  window.scrollTo({
+    top: props.refMostPicked.current.offsetTop - 30,
+    behavior: "smooth"
+  });
 }
 
   return (
@@ -24,9 +27,40 @@ function ShowMostPicked(){
           <p class="mb-5 font-weight-light text-gray-500 w-75">
             We provide what you need to enjoy holiday with family, Time to make another memorable moments.
           </p>
-          <Button class="btn px-5" hasShadow isPrimary onClick={ShowMostPicked}>
+          <Button className="btn px-5" hasShadow isPrimary onClick={ShowMostPicked}>
             Show Me Now
           </Button>
+
+          <div className="row mt-5">
+            <div class="col-auto" style={{marginRight: 50 }}>
+              <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`}/>
+              <h6 className="mt-3">
+                {props.data.travelers}  <span class="text-gray-500 font-weight-light">
+                  Travelers
+                </span>
+              </h6>
+            </div>
+
+            <div class="col-auto" style={{marginRight: 50 }}>
+              <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`}/>
+              <h6 className="mt-3">
+                {props.data.treasures}  <span class="text-gray-500 font-weight-light">
+                  Treasures
+                </span>
+              </h6>
+            </div>
+
+            <div class="col-auto" style={{marginRight: 50 }}>
+              <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`}/>
+              <h6 className="mt-3">
+                {props.data.cities}  <span class="text-gray-500 font-weight-light">
+                  Cities
+                </span>
+              </h6>
+            </div>
+
+            
+          </div>
         </div>
       </div>
     </section>
