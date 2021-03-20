@@ -36,7 +36,7 @@ function ShowMostPicked(){
               <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`}/>
               <h6 className="mt-3">
                 {props.data.travelers}  <span class="text-gray-500 font-weight-light">
-                  Travelers
+                  travelers
                 </span>
               </h6>
             </div>
@@ -45,7 +45,7 @@ function ShowMostPicked(){
               <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`}/>
               <h6 className="mt-3">
                 {props.data.treasures}  <span class="text-gray-500 font-weight-light">
-                  Treasures
+                  treasures
                 </span>
               </h6>
             </div>
@@ -54,7 +54,7 @@ function ShowMostPicked(){
               <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`}/>
               <h6 className="mt-3">
                 {props.data.cities}  <span class="text-gray-500 font-weight-light">
-                  Cities
+                  cities
                 </span>
               </h6>
             </div>
