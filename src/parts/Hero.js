@@ -35,13 +35,8 @@ function ShowMostPicked(){
             <div className="col-auto" style={{marginRight: 10 }}>
               <img width="36" height="36" src={IconTraveler} alt={`${props.data.travelers} Travelers`}/>
               <h6 className="mt-3">
-<<<<<<< Updated upstream
-                {props.data.travelers}  <span class="text-gray-500 font-weight-light">
-                  travelers
-=======
                 {props.data.travelers} {" "} <span className="text-gray-500 font-weight-light">
                   Travelers
->>>>>>> Stashed changes
                 </span>
               </h6>
             </div>
@@ -49,13 +44,8 @@ function ShowMostPicked(){
             <div className="col-auto" style={{marginRight: 10 }}>
               <img width="36" height="36" src={IconTreasure} alt={`${props.data.treasures} Treasures`}/>
               <h6 className="mt-3">
-<<<<<<< Updated upstream
-                {props.data.treasures}  <span class="text-gray-500 font-weight-light">
-                  treasures
-=======
                 {props.data.treasures} {" "} <span className="text-gray-500 font-weight-light">
                   Treasures
->>>>>>> Stashed changes
                 </span>
               </h6>
             </div>
@@ -63,13 +53,8 @@ function ShowMostPicked(){
             <div className="col-auto" style={{marginRight: 10 }}>
               <img width="36" height="36" src={IconCities} alt={`${props.data.cities} Cities`}/>
               <h6 className="mt-3">
-<<<<<<< Updated upstream
-                {props.data.cities}  <span class="text-gray-500 font-weight-light">
-                  cities
-=======
                 {props.data.cities} {" "} <span className="text-gray-500 font-weight-light">
                   Cities
->>>>>>> Stashed changes
                 </span>
               </h6>
             </div>    
