@@ -49,6 +49,11 @@
       }
     }
   }
+&.btn-shadow{
+  box-shadow: 0px 6px 15px rgba($primary,  0.3);
+}
+
+
 }
 
 // Future-proof disabling of clicks on `<a>` elements
