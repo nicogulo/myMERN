@@ -10,13 +10,9 @@ In the project, I learn about MERN -> MongoDb ExpressJs ReactJs NodeJs
 
 Learn make Button Component
 
-### Day 2
+### Day 2 - 3
 
-test the Component with index.test.js
-
-### Day 3
-
-Update Variable component
+test the Component with index.test.js | Update Variable component
 
 ### Day 4
 
