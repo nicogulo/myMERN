@@ -204,29 +204,33 @@ section{
   height: 500px;
 }
 
-footer{
+footer {
   border-top: 1px solid $gray-200;
   padding-top: 50px;
-  
-  .brand-tagline{
+
+  .brand-tagline {
+    margin-top: 8px;
     color: $gray-500;
+    font-weight: 300;
   }
-  .list-group-item{
+
+  .list-group-item {
     padding: 0.3125rem 0;
     border: 0;
-    a, span{
+    a,
+    span {
       color: $gray-500;
       font-weight: 300;
-      a{
-        @include hover-focus{
-          color: $gray-800;
-        }
+    }
+    a {
+      @include hover-focus {
+        color: $gray-800;
       }
     }
-    .copyrights{
-      margin: 50px 0;
-      font-weight: 300;
-      color: $gray-500;
   }
+  .copyrights {
+    margin: 50px 0;
+    font-weight: 300;
+    color: $gray-500;
   }
 }
