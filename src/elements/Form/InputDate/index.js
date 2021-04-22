@@ -9,3 +9,7 @@ import "react-date-range/dist/theme/default.css"; // theme css file
 
 import formatDate from "utils/formatDate";
 import iconCalendar from "assets/images/icons/icon-calendar.svg";
+
+export default function Date() {
+  return <div></div>;
+}
