@@ -11,7 +11,7 @@
 
 .breadcrumb-item {
   a {
-    color: $grey-400;
+    color: $gray-400;
   }
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   + .breadcrumb-item {
@@ -40,6 +40,6 @@
   }
 
   &.active {
-    color: $grey-900;
+    color: $gray-900;
   }
 }
