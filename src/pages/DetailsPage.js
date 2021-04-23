@@ -2,7 +2,10 @@ import React, { Component } from "react";
 import Header from "parts/Header";
 import PageDetailtTitle from "parts/PageDetailtTitle";
 import FeaturedImage from "parts/FeaturedImage";
+import PageDetailDescription from "parts/PageDetailDescription";
+
 import itemDetails from "json/itemDetails.json";
+
 export default class DetailsPage extends Component {
   componentDidMount() {
     window.title = "Details Page";
@@ -21,6 +24,14 @@ export default class DetailsPage extends Component {
           data={itemDetails}
         ></PageDetailtTitle>
         <FeaturedImage data={itemDetails.imageUrls}></FeaturedImage>
+        <section className="container">
+          <div className="row">
+            <div className="col-7 pr-5">
+              <PageDetailDescription data={itemDetails}></PageDetailDescription>
+            </div>
+            <div className="col-5">Booking Form</div>
+          </div>
+        </section>
       </>
     );
   }
