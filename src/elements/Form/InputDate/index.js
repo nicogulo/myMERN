@@ -13,6 +13,7 @@ import iconCalendar from "assets/images/icons/icon-calendar.svg";
 export default function Date(props) {
   const { value, placeholder, name } = props;
   const [isShowed, setIsShowed] = useState(false);
+
   const datePickerChange = (value) => {
     const target = {
       target: {
@@ -22,17 +23,18 @@ export default function Date(props) {
     };
     props.onChange(target);
   };
-  // Hooks, untuk menutup date picker ketika click diluar date picker
+
   useEffect(() => {
     document.addEventListener("mousedown", handleClickOutside);
+
     return () => {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   });
 
   const refDate = useRef(null);
   const handleClickOutside = (event) => {
-    if (refDate && !refDate.current.contain(event.target)) {
+    if (refDate && !refDate.current.contains(event.target)) {
       setIsShowed(false);
     }
   };
@@ -41,9 +43,10 @@ export default function Date(props) {
     focus.indexOf(1) < 0 && setIsShowed(false);
   };
 
-  const displayDate = `${value.startDate ? formatDate(value.startDate) : ""} ${
+  const displayDate = `${value.startDate ? formatDate(value.startDate) : ""}${
     value.endDate ? " - " + formatDate(value.endDate) : ""
   }`;
+
   return (
     <div
       ref={refDate}
