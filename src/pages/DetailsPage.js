@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "parts/Header";
 import PageDetailtTitle from "parts/PageDetailtTitle";
+import FeaturedImage from "parts/FeaturedImage";
 import itemDetails from "json/itemDetails.json";
 export default class DetailsPage extends Component {
   componentDidMount() {
@@ -19,6 +20,7 @@ export default class DetailsPage extends Component {
           breadcrumb={breadcrumb}
           data={itemDetails}
         ></PageDetailtTitle>
+        <FeaturedImage data={itemDetails.imageUrls}></FeaturedImage>
       </>
     );
   }
