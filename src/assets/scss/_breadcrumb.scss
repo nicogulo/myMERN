@@ -20,7 +20,7 @@
     &::before {
       float: left; // Suppress inline spacings and underlining of the separator
       padding-right: $breadcrumb-item-padding;
-      color: $breadcrumb-divider-color;
+      color: $gray-400;
       content: escape-svg($breadcrumb-divider);
     }
   }
