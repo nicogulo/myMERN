@@ -27,7 +27,7 @@ export default function MostPicked(props) {
                         className="img-cover"
                       />
                     </figure>
-                    <div class="meta-wrapper">
+                    <div className="meta-wrapper">
                       <Button
                         type="link"
                         className="stretched-link d-block text-white"
