@@ -23,15 +23,15 @@ export default class BookingForm extends Component {
   }
 
   // eslint-disable-next-line no-undef
-  // updateData = (e) => {
-  //   this.setState({
-  //     ...this.state,
-  //     data: {
-  //       ...this.state.data,
-  //       [e.target.name]: e.target.value,
-  //     },
-  //   });
-  // };
+  updateData = (e) => {
+    this.setState({
+      ...this.state,
+      data: {
+        ...this.state.data,
+        [e.target.name]: e.target.value,
+      },
+    });
+  };
 
   componentDidUpdate(prevProps, prevState) {
     const { data } = this.state;

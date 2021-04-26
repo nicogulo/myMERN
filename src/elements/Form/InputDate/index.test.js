@@ -1,11 +1,9 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
-// eslint-disable-next-line testing-library/no-dom-import
-// eslint-disable-next-line no-unused-vars
+import { screen } from "@testing-library/dom";
 import InputDate from "./index";
 
 class TestInput extends React.Component {
-  // eslint-disable-next-line no-undef
   state = {
     value: {
       startDate: new Date(),
@@ -14,7 +12,6 @@ class TestInput extends React.Component {
     },
   };
 
-  // eslint-disable-next-line no-undef
   handleChange = (e) => {
     this.setState({ value: e.target.value });
   };
