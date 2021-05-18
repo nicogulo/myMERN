@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
 import React, { Component } from 'react';
+import Header from 'parts/Header';
 import Fade from 'react-reveal/Fade';
 // import { connect } from 'react-redux';
 
-import Header from 'parts/Header';
 import Button from 'elements/Button';
 import Stepper, {
   Numbering,
@@ -49,7 +49,7 @@ export default class Checkout extends Component {
   render() {
     const { data } = this.state;
     const checkout = {
-      duration: 3,
+      duration: 2,
     };
     const steps = {
       bookingInformation: {
@@ -92,7 +92,7 @@ export default class Checkout extends Component {
           {(prevStep, nextStep, CurrentStep, steps) => (
             <>
               <Numbering
-                data={data}
+                data={steps}
                 current={CurrentStep}
                 style={{ marginBottom: 50 }}
               />
