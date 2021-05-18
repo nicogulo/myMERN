@@ -67,6 +67,15 @@ export default function Payment(props) {
                 value={data.bankName}
                 onChange={props.onChange}
               />
+
+              <label htmlFor="bankHolder">Nama Pengirim</label>
+              <inputFile
+                id="bankHolder"
+                name="bankHolder"
+                type="text"
+                value={data.bankHolder}
+                onChange={props.onChange}
+              />
             </Fade>
           </div>
         </div>
