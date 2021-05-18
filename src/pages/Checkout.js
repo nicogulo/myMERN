@@ -1,6 +1,9 @@
+/* eslint-disable no-undef */
 import React, { Component } from 'react';
+import Fade from 'react-reveal/Fade';
+// import { connect } from 'react-redux';
+
 import Header from 'parts/Header';
-import Fade from 'react-reveal/fade';
 import Button from 'elements/Button';
 import Stepper, {
   Numbering,
@@ -8,6 +11,7 @@ import Stepper, {
   MainContent,
   Controller,
 } from 'elements/Stepper';
+
 import BookingInformation from 'parts/Checkout/BookingInformation';
 import Payment from 'parts/Checkout/Payment';
 import Completed from 'parts/Checkout/Completed';
@@ -32,13 +36,14 @@ export default class Checkout extends Component {
     this.setState({
       data: {
         ...this.state.data,
-        [event.taget.name]: event.target.value,
+        [event.target.name]: event.target.value,
       },
     });
   };
 
   componentDidMount() {
     window.scroll(0, 0);
+    document.title = 'Staycation | Checkout';
   }
 
   render() {
@@ -74,7 +79,7 @@ export default class Checkout extends Component {
       },
 
       completed: {
-        title: 'Yay!, Completed',
+        title: 'Yay! Completed',
         decription: null,
         content: <Completed />,
       },
@@ -93,7 +98,7 @@ export default class Checkout extends Component {
               />
               <Meta data={steps} current={CurrentStep} />
               <MainContent data={steps} current={CurrentStep} />
-              {CurrentStep === 'bookInformation' && (
+              {CurrentStep === 'bookingInformation' && (
                 <Controller>
                   {data.firstName !== '' &&
                     data.lastName !== '' &&

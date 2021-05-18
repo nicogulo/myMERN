@@ -1,4 +1,4 @@
-@import "../../../assets/scss/colorVariables";
+@import '../../../assets/scss/colorVariables';
 
 $stepperMainColor: $gray-200;
 $size: 60px;
@@ -23,7 +23,7 @@ ol.stepper {
 
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       z-index: 2;
       width: $size;
       height: $size;
@@ -38,7 +38,7 @@ ol.stepper {
     &:not(:last-child) {
       margin-right: 60px;
       &:before {
-        content: "";
+        content: '';
         z-index: -2;
         top: 50%;
         left: 100%;
