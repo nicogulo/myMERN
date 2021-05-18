@@ -14,11 +14,12 @@ export default function Payment(props) {
       <div className="container" style={{ marginBottom: 30 }}>
         <div className="row justify-content-center align-items-center">
           <div className="col-5 border-right py-5" style={{ paddingRight: 80 }}>
-            <Fade delay={300}>
+            <Fade delay={600}>
               <p className="mb-4">Transnfer Pembayaran:</p>
               <p>Tax: {tax}%</p>
               <p>Sub Total: ${subTotal} USD</p>
               <p>Total: ${grandTotal} USD</p>
+
               <div className="row mt-4">
                 <div className="col-text-right">
                   <img src={logoBca} alt="Bank cenetral asia" width="60" />
@@ -44,6 +45,28 @@ export default function Payment(props) {
                   </dl>
                 </div>
               </div>
+            </Fade>
+          </div>
+
+          <div className="col-5 py-5">
+            <Fade delay={600}>
+              <label htmlFor="proofPayment">Upload Bukti Transfer</label>
+              <inputFile
+                accept="image/*"
+                id="proofPayment"
+                name="proofPayment"
+                value={data.proofPayment}
+                onChange={props.onChange}
+              />
+
+              <label htmlFor="bankName">Asal Bank</label>
+              <inputFile
+                id="bankName"
+                name="bankName"
+                type="text"
+                value={data.bankName}
+                onChange={props.onChange}
+              />
             </Fade>
           </div>
         </div>
